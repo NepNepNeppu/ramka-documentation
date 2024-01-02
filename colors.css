@@ -1,0 +1,111 @@
+:root {
+    --colors-grey-0: #000000;
+    --colors-grey-1: #08001B;
+    --colors-grey-2: #201432;
+    --colors-grey-3: #36304f;
+    --colors-grey-4: #544c68;
+    --colors-grey-5: #716a87;
+    --colors-grey-6: #9189a7;
+    --colors-grey-7: #aeacc3;
+    --colors-grey-8: #d2cede;
+    --colors-grey-9: #F5F1FF;
+    --colors-grey-10: #ffffff;
+
+    --colors-grey-1-a80: #08001Bcc;
+    --colors-grey-2-a80: #201432cc;
+    --colors-grey-8-a80: #d2cedecc;
+    --colors-grey-9-a80: #F5F1FFcc;
+
+    --colors-orange: hsl(40, 100%, 50%);
+    --colors-orange-p1: hsl(40, 100%, 60%);
+    --colors-orange-p2: hsl(40, 100%, 80%);
+    --colors-orange-n1: hsl(40, 100%, 40%);
+    --colors-orange-n2: hsl(40, 100%, 20%);
+    --colors-orange-a10: hsla(40, 100%, 50%, 10%);
+    --colors-orange-a20: hsla(40, 100%, 50%, 20%);
+    --colors-orange-a50: hsla(40, 100%, 50%, 50%);
+
+    --colors-magenta: hsl(320, 100%, 50%);
+    --colors-magenta-p1: hsl(320, 100%, 60%);
+    --colors-magenta-p2: hsl(320, 100%, 80%);
+    --colors-magenta-n1: hsl(320, 100%, 40%);
+    --colors-magenta-n2: hsl(320, 100%, 20%);
+    --colors-magenta-a10: hsl(320, 100%, 50%, 10%);
+    --colors-magenta-a20: hsl(320, 100%, 50%, 20%);
+    --colors-magenta-a50: hsl(320, 100%, 50%, 50%);
+
+    --colors-grey: hsl(240, 5%, 60%);
+    --colors-grey-p1: hsl(240, 5%, 70%);
+    --colors-grey-p2: hsl(240, 5%, 80%);
+    --colors-grey-n1: hsl(240, 5%, 40%);
+    --colors-grey-n2: hsl(240, 5%, 20%);
+    --colors-grey-a10: hsl(240, 5%, 60%, 10%);
+    --colors-grey-a20: hsl(240, 5%, 60%, 20%);
+    --colors-grey-a50: hsl(240, 5%, 60%, 50%);
+}
+
+[data-md-color-scheme="colors-light"] {
+    --colors-bg-0: var(--colors-grey-8);
+    --colors-bg-1: var(--colors-grey-9);
+    --colors-bg-1-a80: var(--colors-grey-9-a80);
+    --colors-bg-2: var(--colors-grey-10);
+    --colors-bg-3: var(--colors-grey-10);
+
+    --colors-fg-1: var(--colors-grey-2);
+    --colors-fg-2: var(--colors-grey-3);
+    --colors-fg-3: var(--colors-grey-4);
+
+    --colors-accent: var(--colors-orange-n1);
+    --colors-accent-light: var(--colors-orange-p2);
+    --colors-accent-dark: var(--colors-orange-n2);
+    --colors-accent-text: var(--colors-orange-n2);
+    --colors-accent-a10: var(--colors-orange-a10);
+    --colors-accent-a20: var(--colors-orange-a20);
+
+    --colors-accent-hover: var(--colors-grey);
+    --colors-accent-hover-text: var(--colors-grey-n2);
+    --colors-accent-hover-a10: var(--colors-grey-a10);
+    --colors-accent-hover-a20: var(--colors-grey-a20);
+
+    --colors-stroke: hsla(240, 5%, 0%, 15%);
+    --colors-smoke: var(--colors-grey-9-a80);
+}
+
+[data-md-color-scheme="colors-dark"] {
+    --colors-bg-0: var(--colors-grey-2);
+    --colors-bg-1: var(--colors-grey-1);
+    --colors-bg-1-a80: var(--colors-grey-1-a80);
+    --colors-bg-2: var(--colors-grey-2);
+    --colors-bg-3: var(--colors-grey-3);
+
+    --colors-fg-1: var(--colors-grey-9);
+    --colors-fg-2: var(--colors-grey-9);
+    --colors-fg-3: var(--colors-grey-10);
+
+    --colors-accent: var(--colors-orange);
+    --colors-accent-light: var(--colors-orange-p2);
+    --colors-accent-dark: var(--colors-orange-n2);
+    --colors-accent-text: var(--colors-orange-p1);
+    --colors-accent-a10: var(--colors-orange-a10);
+    --colors-accent-a20: var(--colors-orange-a20);
+
+    --colors-accent-hover: var(--colors-grey);
+    --colors-accent-hover-text: var(--colors-grey-p1);
+    --colors-accent-hover-a10: var(--colors-grey-a10);
+    --colors-accent-hover-a20: var(--colors-grey-a20);
+
+    --colors-stroke: hsla(240, 5%, 100%, 15%);
+    --colors-smoke: var(--colors-grey-1-a80);
+}
+
+[data-md-color-scheme="colors-light"] .colors-dark-theme-only,
+[data-md-color-scheme="colors-dark"] .colors-light-theme-only,
+[data-md-color-scheme="colors-light"] img[src$="#only-dark"],
+[data-md-color-scheme="colors-dark"] img[src$="#only-light"] {
+    display: none !important;
+}
+
+[data-md-color-scheme="colors-light"] img[src$="#only-light"],
+[data-md-color-scheme="colors-dark"] img[src$="#only-dark"] {
+    display: initial;
+}

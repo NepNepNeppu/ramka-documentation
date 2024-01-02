@@ -9,12 +9,12 @@ theme:
   favicon: assets/logo-dark.svg
   palette:
     - media: "(prefers-color-scheme: dark)"
-      scheme: fusiondoc-dark
+      scheme: colors-dark
       toggle:
         icon: octicons/sun-24
         title: Switch to light theme
     - media: "(prefers-color-scheme: light)"
-      scheme: fusiondoc-light
+      scheme: colors-light
       toggle:
         icon: octicons/moon-24
         title: Switch to dark theme
