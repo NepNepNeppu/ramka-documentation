@@ -1,7 +1,8 @@
 ---
-  hide:
-    - toc
-    - navigation
+    template: home.css
+    hide:
+        - toc
+        - navigation
 ---
 
 Fusion introduces ‘state objects’. They aren’t that complex, but allow you
