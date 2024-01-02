@@ -1,0 +1,61 @@
+site_name: Ramka
+site_url: https://neptune.us/Ramka/
+repo_name: NepNepNeppu/Ramka
+repo_url: https://github.com/NepNepNeppu/Ramka-Framework
+
+theme:
+  name: material
+  logo: assets/logo
+  favicon: assets/logo-dark.svg
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: fusiondoc-dark
+      toggle:
+        icon: octicons/sun-24
+        title: Switch to light theme
+    - media: "(prefers-color-scheme: light)"
+      scheme: fusiondoc-light
+      toggle:
+        icon: octicons/moon-24
+        title: Switch to dark theme
+  font:
+    text: Plus Jakarta Sans
+    code: JetBrains Mono
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.sections
+    - navigation.instant
+    - navigation.indexes
+    - search.suggest
+    - search.highlight
+  icon:
+    repo: octicons/mark-github-16
+
+extra_css:
+  - theme.css
+
+extra_javascript:
+  - assets/scripts/smooth-scroll.js
+
+nav:
+  - Home: index.md
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - meta
+  - md_in_html
+  - pymdownx.superfences
+  - pymdownx.betterem
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.inlinehilite
+  - toc:
+      permalink: true
+  - pymdownx.highlight:
+      guess_lang: false
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
