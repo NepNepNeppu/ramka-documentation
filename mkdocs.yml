@@ -8,10 +8,10 @@ extra_javascript:
 
 extra_css:
   - style.css
+  - base.css
 
 theme:
   name: material
-  logo: assets/logo
   favicon: assets/logo-dark.svg
   font:
     text: Plus Jakarta Sans
