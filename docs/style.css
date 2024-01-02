@@ -1,4 +1,8 @@
-:root {
+h1 {
+    color: red;
+}
+
+/* :root {
     --colors-grey-0: #000000;
     --colors-grey-1: #08001B;
     --colors-grey-2: #201432;
@@ -108,4 +112,4 @@
 [data-md-color-scheme="colors-light"] img[src$="#only-light"],
 [data-md-color-scheme="colors-dark"] img[src$="#only-dark"] {
     display: initial;
-}
+} */

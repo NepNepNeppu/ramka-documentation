@@ -3,6 +3,12 @@ site_url: https://neptune.us/Ramka/
 repo_name: NepNepNeppu/Ramka
 repo_url: https://github.com/NepNepNeppu/Ramka-Framework
 
+extra_javascript:
+  - smooth-scroll.js
+
+extra_css:
+  - style.css
+
 theme:
   name: material
   logo: assets/logo
@@ -19,14 +25,8 @@ theme:
     - search.suggest
     - search.highlight
 
-extra_javascript:
-  - smooth-scroll.js
-
-extra_css:
-  - style.css
-
 nav:
-  - Home: page.md
+  - Home: Home.md
 
 markdown_extensions:
   - admonition
