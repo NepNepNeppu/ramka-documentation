@@ -4,6 +4,8 @@ repo_name: NepNepNeppu/Ramka
 repo_url: https://github.com/NepNepNeppu/Ramka-Framework
 
 theme:
+  palette:
+    primary: custom
   name: material
   logo: assets/logo
   favicon: assets/logo-dark.svg
