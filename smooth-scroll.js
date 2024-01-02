@@ -2,8 +2,8 @@ document.body.addEventListener("click", e => {
     let link = null;
     let target = e.target;
 
-    while (target != null) {
-        if (target.tagName == "A") {
+    while(target != null) {
+        if(target.tagName == "A") {
             link = target;
             break;
         } else {
@@ -11,13 +11,13 @@ document.body.addEventListener("click", e => {
         }
     }
 
-    if (link != null) {
-        if (link.href.includes("#")) {
+    if(link != null) {
+        if(link.href.includes("#")) {
             // enable smooth scrolling when clicking on section links
-            document.body.parentNode.classList.remove("colors-inhibit-smooth-scrolling");
+            document.body.parentNode.classList.remove("fusiondoc-inhibit-smooth-scrolling");
         } else {
             // disable it everywhere else
-            document.body.parentNode.classList.add("colors-inhibit-smooth-scrolling");
+            document.body.parentNode.classList.add("fusiondoc-inhibit-smooth-scrolling");
         }
     }
 })
