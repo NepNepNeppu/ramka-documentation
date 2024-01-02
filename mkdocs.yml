@@ -6,10 +6,6 @@ repo_url: https://github.com/NepNepNeppu/Ramka-Framework
 extra_javascript:
   - smooth-scroll.js
 
-extra_css:
-  - style.css
-  - base.css
-
 theme:
   name: material
   favicon: assets/logo-dark.svg
@@ -25,8 +21,19 @@ theme:
     - search.suggest
     - search.highlight
 
+language: en
+
 nav:
-  - Home: Home.md
+  - Home: pages/Home.md
+  - API
+
+extra_css:
+  - theme/colorsheet.css
+  - theme/base.css
+  - theme/home.css
+
+static_templates:
+  - 404.html
 
 markdown_extensions:
   - admonition

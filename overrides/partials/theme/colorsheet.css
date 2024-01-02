@@ -1,0 +1,25 @@
+:root {
+    --grey-1: hsl(240, 5%, 5%);
+    --grey-2: hsl(240, 5%, 10%);
+
+    --text-grey-1: hsl(240, 5%, 40%);
+    --text-grey-2: hsl(240, 5%, 50%);
+    --text-grey-3: hsl(240, 5%, 60%);
+    --text-grey-4: hsl(240, 5%, 70%);
+
+    --style-1: hsl(339, 100%, 50%);
+    --style-2: hsl(319, 100%, 50%);
+    --style-3: hsl(288, 100%, 50%);
+
+    --style-1d: hsl(339, 100%, 60%);
+    --style-2d: hsl(319, 100%, 60%);
+    --style-3d: hsl(288, 100%, 60%);
+
+    /* extra */
+    --style-1e: hsl(269, 100%, 50%);
+    --style-2e: hsl(258, 100%, 50%);
+    --style-3e: hsl(213, 100%, 50%);
+    --style-4e: hsl(193, 100%, 50%);
+    --style-5e: hsl(176, 100%, 50%);
+    --style-6e: hsl(152, 100%, 50%);
+}
