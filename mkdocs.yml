@@ -3,14 +3,23 @@ site_url: https://neptune.us/Ramka/
 repo_name: NepNepNeppu/Ramka
 repo_url: https://github.com/NepNepNeppu/Ramka-Framework
 
-extra_javascript:
-  - smooth-scroll.js
-
 theme:
   name: material
+  custom_dir: docs/overrides
   favicon: assets/logo-dark.svg
+  palette:
+    - media: "(prefers-color-scheme: dark)"
+      scheme: dark-theme
+      toggle:
+        icon: material/weather-night
+        title: Switch to light theme
+    - media: "(prefers-color-scheme: light)"
+      scheme: light-theme
+      toggle:
+        icon: material/weather-sunny
+        title: Switch to dark theme
   font:
-    text: Plus Jakarta Sans
+    text: Montserrat Bold
     code: JetBrains Mono
   features:
     - navigation.tabs
@@ -20,20 +29,18 @@ theme:
     - navigation.indexes
     - search.suggest
     - search.highlight
-
-language: en
+  icon:
+    repo: octicons/mark-github-16
 
 nav:
   - Home: pages/Home.md
-  - API
+  - Scheduler:
+    - Home: pages/Scheduler/index.md
+    - Construct: pages/Scheduler/construct.md
+    - Pipeline: pages/Scheduler/pipeline.md
 
 extra_css:
-  - theme/colorsheet.css
-  - theme/base.css
-  - theme/home.css
-
-static_templates:
-  - 404.html
+  - stylesheets/extra.css
 
 markdown_extensions:
   - admonition

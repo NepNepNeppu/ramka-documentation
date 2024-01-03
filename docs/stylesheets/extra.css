@@ -1,0 +1,163 @@
+:root {
+    --dark-grey-1: hsl(20, 5%, 15%);
+    --dark-grey-2: hsl(20, 5%, 20%);
+    --dark-grey-3: hsla(20, 5%, 25%);
+    --dark-grey-4: hsla(20, 5%, 30%);
+
+    --light-grey-1: hsl(50, 5%, 70%);
+    --light-grey-1v: hsl(50, 5%, 75%);
+    --light-grey-2: hsl(50, 10%, 80%);
+    --light-grey-2v: hsl(50, 3%, 80%);
+    --light-grey-2vv: hsl(50, 15%, 84%);
+    --light-grey-3: hsl(50, 5%, 85%);
+
+    --white-1: hsl(0, 0%, 78%);
+    --white-2: hsl(0, 0%, 82%);
+    --white-3: hsl(0, 0%, 86%);
+
+    --dark-mode-grey-1: hsl(240, 5%, 10%);
+    --dark-mode-grey-2: hsl(240, 3%, 13%);
+    --dark-mode-grey-3: hsl(240, 5%, 25%);
+    --dark-mode-grey-4: hsl(240, 5%, 35%);
+
+    --style-1: hsl(228, 63%, 51%);
+    --style-2: hsl(202, 63%, 51%);
+    --style-3: hsl(173, 63%, 51%);
+    --style-4: hsl(153, 63%, 51%);
+
+    --null: hsl(0, 69%, 43%);
+}
+
+/* hsl(0,0%,0%); */
+
+.md-top { /* back button text color */
+    color: var(--md-primary-bg-color);
+    font-weight: bold;
+    border-radius: 100rem
+}
+
+.md-top:hover { /* back button text color */
+    color: var(--md-primary-bg-color);
+    font-weight: bold;
+    border-radius: 100rem
+}
+
+.md-header__topic[data-md-component=header-topic] > .md-ellipsis {
+    font-style: italic;
+}
+
+.md-typeset h1 {
+    color: var(--md-primary-bg-color);
+    font-weight: bold;
+}
+
+.md-typeset h2 {
+    color: var(--md-primary-bg-color);
+    font-weight: 200
+    ;
+}
+
+.md-nav__item { /* table of contents low class items */
+    color: var(--md-primary-bg-color);
+}
+
+[data-md-toggle=search]:checked~.md-header .md-search__input:valid~.md-search__options>.md-icon { /* search bar clear search */
+    color: var(--md-primary-bg-color);
+}
+
+[data-md-toggle=search]:checked~.md-header .md-search__input+.md-search__icon { /* search icon active */
+    color: var(--md-primary-bg-color);
+}
+
+.md-search__icon[for=__search] { /* search icon idle */
+    color: var(--md-primary-bg-color)
+}
+
+.md-search-result mark { /* search found header*/
+    font-weight:bold;
+    color: var(--md-primary-bg-color)
+}
+
+.md-search__input::placeholder { /* search bar text idle color */
+    color: var(--md-default-bg-color--lighter);
+}
+
+input[type=text] {
+    color: var(--md-primary-bg-color);
+    background-color: var(--md-default-bg-color--light); /* background of search bar */
+}
+
+input[type=text]:hover:not(.focus-visible) {
+    background-color: var(--md-default-bg-color--lightest); /* background of search bar when hovered */
+}
+
+.md-footer {
+    background-color: var(--md-default-bg-color)
+}
+
+.md-footer-meta {
+    color: hsla(0, 0%, 0%, 1)
+}
+
+.md-nav--secondary .md-nav__title[for=__toc] { /* table of contents */
+    color: var(--md-primary-bg-color)
+}
+
+[dir=ltr] .md-nav--primary .md-nav__item>.md-nav__link:hover {
+    color: var(--md-primary-bg-color);
+}
+
+.md-nav__container>.md-nav__link:first-child {
+    color: var(--md-primary-bg-color);
+}
+
+.md-nav__link .md-ellipsis {
+    color: var(--md-primary-bg-color);
+}
+
+.md-nav__link .md-ellipsis:hover {
+    color: var(--md-primary-bg-color);
+    font-style: italic;
+}
+
+[data-md-color-scheme="light-theme"] {  
+    /* TOPBAR */
+    --md-primary-fg-color:                  var(--light-grey-2); /* background */
+    --md-primary-bg-color:                  var(--dark-grey-3); /* text */
+    
+    /* PAGE */
+    --md-default-bg-color:                  var(--light-grey-3); /* background */
+    --md-code-bg-color:                     var(--light-grey-2v); /* code block */      
+
+    /* BACK TO TOP */
+    --md-accent-fg-color:                   var(--light-grey-1); /* background */
+    --md-shadow-z2:                         0 0 0rem var(--light-grey-1), 0 0rem .5rem var(--dark-grey-1); /* highlight */
+
+    --md-default-bg-color--light:           var(--light-grey-2vv); /* used for background of search bar */
+    --md-default-bg-color--lighter:         var(--dark-grey-4); /* used for search bar text idle color */
+    --md-default-bg-color--lightest:        var(--light-grey-1); /* used for search bar hover idle color */
+
+    /* SEARCH BAR */
+    --md-default-fg-color--lightest:        var(--light-grey-2); /* search results */
+}
+
+[data-md-color-scheme="dark-theme"] {  
+    /* TOPBAR */
+    --md-primary-fg-color:                  var(--dark-mode-grey-1); /* background */
+    --md-primary-bg-color:                  var(--white-3); /* text */
+    
+    /* PAGE */
+    --md-default-bg-color:                  var(--dark-mode-grey-1); /* background */
+    --md-code-bg-color:                     var(--dark-mode-grey-2); /* code block */      
+
+    /* BACK TO TOP */
+    --md-accent-fg-color:                   var(--light-grey-1); /* background */
+    --md-shadow-z2:                         0 0 0rem var(--light-grey-1), 0 0rem .5rem var(--dark-grey-1); /* highlight */
+
+    --md-default-bg-color--light:           var(--light-grey-2vv); /* used for background of search bar */
+    --md-default-bg-color--lighter:         var(--dark-grey-4); /* used for search bar text idle color */
+    --md-default-bg-color--lightest:        var(--light-grey-1vv); /* used for search bar hover idle color */
+
+    /* SEARCH BAR */
+    --md-default-fg-color--lightest:        var(--light-grey-2); /* search results */
+}

@@ -1,18 +1,9 @@
-
-
-.md-main {
-    background-color: var(--grey-2)
-}
-
 .md-header--shadow {
     box-shadow: 0 0 0.1rem var(--style-3), 0 0.1rem 0.2rem var(--style-5);
 }
-.md-header {
-    background-color: var(--grey-2)
-}
 
-.md-tabs {
-    background-color: var(--grey-2)
+button[reset] {
+    color: #fff;
 }
 
 .md-header__inner {
