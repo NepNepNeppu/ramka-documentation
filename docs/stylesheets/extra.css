@@ -17,7 +17,7 @@
 
     --dark-mode-grey-1: hsl(240, 5%, 10%);
     --dark-mode-grey-2: hsl(240, 3%, 13%);
-    --dark-mode-grey-3: hsl(240, 5%, 25%);
+    --dark-mode-grey-3: hsl(240, 3%, 15%);
     --dark-mode-grey-4: hsl(240, 5%, 35%);
 
     --style-1: hsl(228, 63%, 51%);
@@ -26,9 +26,11 @@
     --style-4: hsl(153, 63%, 51%);
 
     --null: hsl(0, 69%, 43%);
-}
 
-/* hsl(0,0%,0%); */
+    --md-code-hl-special-color:          hsla(340, 83%, 47%, 1);
+    --md-code-hl-function-color:         hsla(291, 45%, 50%, 1);
+    --md-code-hl-keyword-color:          rgb(198, 63, 88);
+}
 
 .md-top { /* back button text color */
     color: var(--md-primary-bg-color);
@@ -69,6 +71,19 @@
     color: var(--md-primary-bg-color);
 }
 
+[dir=ltr] .md-search-result__meta { /* matching document found */
+    background-color: var(--md-default-bg-color--light);
+    color: var(--md-primary-bg-color);
+}
+
+.md-search-result .md-typeset h2 { /* any headers that appear in documents in the search query */
+    color: var(--md-primary-bg-color)
+}
+
+.md-search-result__icon { /* document icon search */
+    color: var(--md-primary-bg-color)
+}
+
 .md-search__icon[for=__search] { /* search icon idle */
     color: var(--md-primary-bg-color)
 }
@@ -78,8 +93,16 @@
     color: var(--md-primary-bg-color)
 }
 
+.md-search-result .md-typeset h1 { /* smaller low class header inside search query */
+    color: var(--md-primary-bg-color)
+}
+
 .md-search__input::placeholder { /* search bar text idle color */
     color: var(--md-default-bg-color--lighter);
+}
+
+.md-search-result__more summary { /* page summary */
+    color: var(--accent-color)
 }
 
 input[type=text] {
@@ -103,6 +126,8 @@ input[type=text]:hover:not(.focus-visible) {
     color: var(--md-primary-bg-color)
 }
 
+/* navigation recolor */
+
 [dir=ltr] .md-nav--primary .md-nav__item>.md-nav__link:hover {
     color: var(--md-primary-bg-color);
 }
@@ -118,6 +143,15 @@ input[type=text]:hover:not(.focus-visible) {
 .md-nav__link .md-ellipsis:hover {
     color: var(--md-primary-bg-color);
     font-style: italic;
+}
+
+p {
+    color: var(--md-typeset-color)
+}
+
+.md-typeset code:not(.focus-visible) {
+    font-style: italic;
+    color: var(--md-typeset-color)
 }
 
 [data-md-color-scheme="light-theme"] {  
@@ -139,6 +173,20 @@ input[type=text]:hover:not(.focus-visible) {
 
     /* SEARCH BAR */
     --md-default-fg-color--lightest:        var(--light-grey-2); /* search results */
+
+    --md-typeset-color:                     var(--md-default-fg-color); /* general text color */
+
+    --accent-color:                         hsl(39, 57%, 45%);
+
+    --md-code-hl-name-color:             var(--dark-grey-3);
+    --md-code-hl-operator-color:         var(--accent-color);
+    --md-code-hl-punctuation-color:      var(--accent-color);
+    --md-code-hl-comment-color:          var(--dark-grey-3);
+    --md-code-hl-generic-color:          var(--dark-grey-3);
+    --md-code-hl-variable-color:         var(--dark-grey-3);
+    --md-code-hl-string-color:           rgb(69, 144, 85);
+    --md-code-hl-number-color:           rgb(77, 81, 194);
+    --md-code-hl-constant-color:         rgb(77, 81, 194);
 }
 
 [data-md-color-scheme="dark-theme"] {  
@@ -151,13 +199,27 @@ input[type=text]:hover:not(.focus-visible) {
     --md-code-bg-color:                     var(--dark-mode-grey-2); /* code block */      
 
     /* BACK TO TOP */
-    --md-accent-fg-color:                   var(--light-grey-1); /* background */
+    --md-accent-fg-color:                   var(--dark-mode-grey-2); /* background */
     --md-shadow-z2:                         0 0 0rem var(--light-grey-1), 0 0rem .5rem var(--dark-grey-1); /* highlight */
 
-    --md-default-bg-color--light:           var(--light-grey-2vv); /* used for background of search bar */
-    --md-default-bg-color--lighter:         var(--dark-grey-4); /* used for search bar text idle color */
-    --md-default-bg-color--lightest:        var(--light-grey-1vv); /* used for search bar hover idle color */
+    --md-default-bg-color--light:           var(--dark-mode-grey-2); /* used for background of search bar */
+    --md-default-bg-color--lighter:         var(--white-3); /* used for search bar text idle color */
+    --md-default-bg-color--lightest:        var(--dark-mode-grey-3); /* used for search bar hover idle color */
 
     /* SEARCH BAR */
     --md-default-fg-color--lightest:        var(--light-grey-2); /* search results */
+
+    --md-typeset-color:                     var(--white-3); /* general text color */
+
+    --accent-color:                         hsl(39, 57%, 45%);
+
+    --md-code-hl-name-color:             var(--md-typeset-color);
+    --md-code-hl-operator-color:         var(--accent-color);
+    --md-code-hl-punctuation-color:      var(--accent-color);
+    --md-code-hl-comment-color:          var(--md-typeset-color);
+    --md-code-hl-generic-color:          var(--md-typeset-color);
+    --md-code-hl-variable-color:         var(--md-typeset-color);
+    --md-code-hl-string-color:           rgb(89, 163, 105);
+    --md-code-hl-number-color:           rgb(104, 107, 193);
+    --md-code-hl-constant-color:         rgb(104, 107, 193);
 }

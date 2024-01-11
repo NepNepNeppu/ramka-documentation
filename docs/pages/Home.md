@@ -1,6 +1,7 @@
 ---
     hide:
         - navigation
+        - toc
 ---
 
 <!-- overrides default required header -->

@@ -34,13 +34,15 @@ theme:
 
 nav:
   - Home: pages/Home.md
-  - Scheduler:
-    - Home: pages/Scheduler/index.md
-    - Construct: pages/Scheduler/construct.md
-    - Pipeline: pages/Scheduler/pipeline.md
+  - API Reference:
+    - Scheduler:
+      - pages/Scheduler/index.md
+      - Construct: pages/Scheduler/construct.md
+      - Pipeline: pages/Scheduler/pipeline.md
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/home.css
 
 markdown_extensions:
   - admonition
