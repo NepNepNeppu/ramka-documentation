@@ -20,8 +20,6 @@ jobs:
       run: |
         npm install
         npm run-script build
-    - name: Deploy
-      uses: NepNepNeppu/github-pages-deploy-action@releases/v3
     - uses: actions/cache@v2
       with:
         key: ${{ github.ref }}
