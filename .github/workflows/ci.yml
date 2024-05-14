@@ -1,8 +1,11 @@
-name: GitHub Actions Build and Deploy Demo
+name: ci 
 on:
   push:
     branches:
-      - master
+      - master 
+      - main
+permissions:
+  contents: write
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -19,7 +22,10 @@ jobs:
         npm run-script build
     - name: Deploy
       uses: NepNepNeppu/github-pages-deploy-action@releases/v3
-      with:
-        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        BRANCH: gh-pages
-        FOLDER: build
+    - uses: actions/cache@v2
+        with:
+          key: ${{ github.ref }}
+          path: .cache
+    - run: pip install mkdocs-material
+    - run: pip install pillow cairosvg
+    - run: mkdocs gh-deploy --force
