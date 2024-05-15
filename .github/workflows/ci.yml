@@ -1,4 +1,4 @@
-name: ci 
+name: v1.0.1
 on:
   push:
     branches:
