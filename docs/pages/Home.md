@@ -1,6 +1,8 @@
-<!-- # python -m venv venv
+<!-- 
+# python -m venv venv
 # venv\Scripts\activate
-# mkdocs serve -->
+# mkdocs serve 
+-->
 
 ---
     hide:
