@@ -1,0 +1,319 @@
+:root {
+    --dark-grey-1: hsl(20, 5%, 15%);
+    --dark-grey-2: hsl(20, 5%, 20%);
+    --dark-grey-3: hsla(20, 5%, 25%);
+    --dark-grey-4: hsla(20, 5%, 30%);
+
+    --light-grey-1: hsl(50, 5%, 70%);
+    --light-grey-1v: hsl(50, 5%, 75%);
+    --light-grey-2: hsl(50, 10%, 80%);
+    --light-grey-2v: hsl(50, 3%, 80%);
+    --light-grey-2vv: hsl(50, 15%, 84%);
+    --light-grey-3: hsl(50, 5%, 85%);
+
+    --white-1: hsl(0, 0%, 78%);
+    --white-2: hsl(0, 0%, 82%);
+    --white-3: hsl(0, 0%, 86%);
+
+    --dark-mode-grey-1: hsl(228, 7%, 10%);
+    --dark-mode-grey-2: hsl(228, 5%, 13.4%);
+    --dark-mode-grey-3: hsl(228, 6%, 14.5%);
+
+    --style-1: hsl(228, 63%, 51%);
+    --style-2: hsl(202, 63%, 51%);
+    --style-3: hsl(173, 63%, 51%);
+    --style-4: hsl(153, 63%, 51%);
+
+    --null: hsl(0, 69%, 43%);
+
+    --md-code-hl-special-color:          hsla(340, 83%, 47%, 1);
+    --md-code-hl-function-color:         hsla(291, 45%, 50%, 1);
+    --md-code-hl-keyword-color:          rgb(198, 63, 88);
+}
+
+.md-top { /* back button text color */
+    color: var(--md-primary-bg-color);
+    font-weight: bold;
+    border-radius: 100rem
+}
+
+.md-top:hover { /* back button text color */
+    color: var(--md-primary-bg-color);
+    font-weight: bold;
+    border-radius: 100rem
+}
+
+.md-header__topic[data-md-component=header-topic] > .md-ellipsis {
+    font-style: italic;
+    text-indent: 1px;
+}
+
+.md-typeset h1 {
+    color: var(--md-primary-bg-color);
+    font-weight: bold;
+}
+
+.md-typeset h2 {
+    color: var(--md-primary-bg-color);
+    font-weight: bold;
+}
+
+.md-typeset h3 {
+    color: var(--md-primary-bg-color);
+    font-weight: bold;
+    font-size: 25px;
+    /* display:block;
+    text-indent: 15px; */
+}
+
+#span-inline-ignore-contents {
+    color: var(--md-primary-bg-color);
+    font-weight: bold;
+    font-size: 24px; 
+}
+
+#table-div-start {
+    width: 30%;
+    height: 100%;
+    align-items: center;
+    background-color: var(--md-code-bg-color1);
+    position: absolute;
+}
+
+#align {
+    height: 10px;
+    width: 35%;
+}
+
+#row {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    display: flex; /* Use flexbox */
+    align-items: center; /* Vertically center */
+}
+
+#outline {
+    border: 4px solid var(--md-code-bg-color1);
+    border-radius: 5px;
+}
+
+#table-text {
+    color: var(--md-shadow-z2);
+    font-size: 15.4px;
+    font-weight: 200;
+    margin: 20px;
+}
+
+#inline-div {
+    width: 100%;
+    border-bottom: 2px solid var(--md-default-bg-color);
+}
+
+#inline-div:hover {
+    background-color: var(--md-code-bg-color1);
+}
+
+#table-div-end {
+    width: 70%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.md-typeset h4 {
+    color: var(--md-primary-bg-color);
+    font-size: 25px;
+    font-weight: 200;
+}
+
+.md-nav__item { /* table of contents low class items */
+    color: var(--md-primary-bg-color);
+}
+
+.md-nav__container>.md-nav__link {
+    display:block;
+    text-indent: 15px;
+}
+
+.md-nav__list {
+    display:block;
+    text-indent: 30px;
+}
+
+.md-nav--lifted>.md-nav__list>.md-nav__item--active>.md-nav__link {
+    font-size: 20px;
+    display:inline-block;
+    text-indent: -30px;
+}
+
+.md-nav__source {
+    background-color: var(--md-default-bg-color)
+}
+
+[data-md-toggle=search]:checked~.md-header .md-search__input:valid~.md-search__options>.md-icon { /* search bar clear search */
+    color: var(--md-primary-bg-color);
+}
+
+[data-md-toggle=search]:checked~.md-header .md-search__input+.md-search__icon { /* search icon active */
+    color: var(--md-primary-bg-color);
+}
+
+[dir=ltr] .md-search-result__meta { /* matching document found */
+    background-color: var(--md-default-bg-color--light);
+    color: var(--md-primary-bg-color);
+}
+
+.md-search-result .md-typeset h2 { /* any headers that appear in documents in the search query */
+    color: var(--md-primary-bg-color)
+}
+
+.md-search-result__icon { /* document icon search */
+    color: var(--md-primary-bg-color)
+}
+
+.md-search__icon[for=__search] { /* search icon idle */
+    color: var(--md-primary-bg-color)
+}
+
+.md-search-result mark { /* search found header*/
+    font-weight:bold;
+    color: var(--md-primary-bg-color)
+}
+
+.md-search-result .md-typeset h1 { /* smaller low class header inside search query */
+    color: var(--md-primary-bg-color)
+}
+
+.md-search__input::placeholder { /* search bar text idle color */
+    color: var(--md-default-bg-color--lighter);
+}
+
+.md-search-result__more summary { /* page summary */
+    color: var(--accent-color)
+}
+
+input[type=text] {
+    color: var(--md-primary-bg-color);
+    background-color: var(--md-default-bg-color--light); /* background of search bar */
+}
+
+input[type=text]:hover:not(.focus-visible) {
+    background-color: var(--md-default-bg-color--lightest); /* background of search bar when hovered */
+}
+
+.md-footer {
+    background-color: var(--md-default-bg-color)
+}
+
+.md-footer-meta {
+    color: hsla(0, 0%, 0%, 1)
+}
+
+.md-nav--secondary .md-nav__title[for=__toc] { /* table of contents */
+    color: var(--md-primary-bg-color)
+}
+
+/* navigation recolor */
+
+[dir=ltr] .md-nav--primary .md-nav__item>.md-nav__link:hover {
+    color: var(--md-primary-bg-color);
+}
+
+.md-nav__container>.md-nav__link:first-child {
+    color: var(--md-primary-bg-color);
+    font-weight: 200;
+}
+
+.md-nav__item--section>.md-nav>.md-nav__list>.md-nav__item {
+    height: 8px;
+}
+
+.md-nav__link .md-ellipsis {
+    color: var(--md-primary-bg-color);
+}
+
+.md-nav__link .md-ellipsis:hover {
+    color: var(--md-primary-bg-color);
+    font-style: italic;
+}
+
+p {
+    color: var(--md-typeset-color)
+}
+
+.md-typeset code:not(.focus-visible) {
+    font-style: italic;
+    color: var(--md-typeset-color)
+}
+
+[data-md-color-scheme="light-theme"] {  
+    /* TOPBAR */
+    --md-primary-fg-color:                  var(--light-grey-2); /* background */
+    --md-primary-bg-color:                  var(--dark-grey-3); /* text */
+    
+    /* PAGE */
+    --md-default-bg-color:                  var(--light-grey-3); /* background */
+    --md-code-bg-color:                     var(--light-grey-2v); /* code block */      
+    --md-code-bg-color1:                    var(--light-grey-2vv); /* code block */      
+
+    /* BACK TO TOP */
+    --md-accent-fg-color:                   var(--light-grey-1); /* background */
+    --md-shadow-z2:                         0 0 0rem var(--light-grey-1), 0 0rem .5rem var(--dark-grey-1); /* highlight */
+
+    --md-default-bg-color--light:           var(--light-grey-2vv); /* used for background of search bar */
+    --md-default-bg-color--lighter:         var(--dark-grey-4); /* used for search bar text idle color */
+    --md-default-bg-color--lightest:        var(--light-grey-1); /* used for search bar hover idle color */
+
+    /* SEARCH BAR */
+    --md-default-fg-color--lightest:        var(--light-grey-2); /* search results */
+
+    --md-typeset-color:                     var(--md-default-fg-color); /* general text color */
+
+    --accent-color:                         hsl(39, 57%, 45%);
+
+    --md-code-hl-name-color:             var(--dark-grey-3);
+    --md-code-hl-operator-color:         var(--accent-color);
+    --md-code-hl-punctuation-color:      var(--accent-color);
+    --md-code-hl-comment-color:          var(--dark-grey-3);
+    --md-code-hl-generic-color:          var(--dark-grey-3);
+    --md-code-hl-variable-color:         var(--dark-grey-3);
+    --md-code-hl-string-color:           rgb(69, 144, 85);
+    --md-code-hl-number-color:           rgb(77, 81, 194);
+    --md-code-hl-constant-color:         rgb(77, 81, 194);
+}
+
+[data-md-color-scheme="dark-theme"] {  
+    /* TOPBAR */
+    --md-primary-fg-color:                  var(--dark-mode-grey-1); /* background */
+    --md-primary-bg-color:                  var(--white-3); /* text */
+    
+    /* PAGE */
+    --md-default-bg-color:                  var(--dark-mode-grey-1); /* background */
+    --md-code-bg-color:                     var(--dark-mode-grey-2); /* code block */      
+    --md-code-bg-color1:                     var(--dark-mode-grey-2); /* code block */      
+
+    /* BACK TO TOP */
+    --md-accent-fg-color:                   var(--dark-mode-grey-2); /* background */
+    --md-shadow-z2:                         0 0 0rem var(--light-grey-1), 0 0rem .5rem var(--dark-grey-1); /* highlight */
+
+    --md-default-bg-color--light:           var(--dark-mode-grey-2); /* used for background of search bar */
+    --md-default-bg-color--lighter:         var(--white-3); /* used for search bar text idle color */
+    --md-default-bg-color--lightest:        var(--dark-mode-grey-3); /* used for search bar hover idle color */
+
+    /* SEARCH BAR */
+    --md-default-fg-color--lightest:        var(--light-grey-2); /* search results */
+
+    --md-typeset-color:                     var(--white-3); /* general text color */
+
+    --accent-color:                         hsl(39, 57%, 45%);
+
+    --md-code-hl-name-color:             var(--md-typeset-color);
+    --md-code-hl-operator-color:         var(--accent-color);
+    --md-code-hl-punctuation-color:      var(--accent-color);
+    --md-code-hl-comment-color:          var(--md-typeset-color);
+    --md-code-hl-generic-color:          var(--md-typeset-color);
+    --md-code-hl-variable-color:         var(--md-typeset-color);
+    --md-code-hl-string-color:           rgb(89, 163, 105);
+    --md-code-hl-number-color:           rgb(104, 107, 193);
+    --md-code-hl-constant-color:         rgb(104, 107, 193);
+}
