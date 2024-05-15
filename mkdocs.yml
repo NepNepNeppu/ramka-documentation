@@ -1,5 +1,5 @@
 site_name: Ramka
-site_url: https://nepnepneppu.github.io/ramka-documentation/
+site_url: https://nepnepneppu.github.io/ramka-documentation
 repo_name: NepNepNeppu/Ramka
 repo_url: https://github.com/NepNepNeppu/Ramka-Framework
 
@@ -33,12 +33,18 @@ theme:
     repo: octicons/mark-github-16
 
 nav:
+  # - pages/Home.md
   - Home: pages/Home.md
   - API Reference:
     - Scheduler:
       - pages/Scheduler/index.md
-      - Construct: pages/Scheduler/construct.md
-      - Pipeline: pages/Scheduler/pipeline.md
+    - Components:
+      - pages/Components/index.md
+    - Internal API:
+      - pages/Services-Classes/index.md
+    - Embeded:
+      - pages/Embeded/index.md
+
 
 extra_css:
   - stylesheets/extra.css
