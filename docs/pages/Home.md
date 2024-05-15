@@ -1,3 +1,7 @@
+<!-- # python -m venv venv
+# venv\Scripts\activate
+# mkdocs serve -->
+
 ---
     hide:
         - navigation
